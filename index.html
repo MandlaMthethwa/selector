@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+    
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/cart.js" type="text/javascript"></script> 
+        
+
+        <title>Slider</title>
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/site.css">
+
+                                        
+    </head>
+    <body>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                        </div>
+                            
+                        <div class="card-content">
+                                <!-- <div class="row">
+                                    <h2>Product Name</h2>
+                                    <div class="col span-1-of-3">
+                                        <div class="plan-box js--wp-4">
+                                            <div>
+                                                <p class="plan-price">R119 <span>/month</span></p>
+                                            </div>
+                                            <div>
+                                                <ul>
+                                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>Setup :Free</li>
+                                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>Traffic :Free</li>
+                                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>Storage :5GB</li>
+                                                    <li><i class="ion-ios-checkmark-empty icon-small"></i>Databases: Yes</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                        </div> -->
+                        <li class="product"  rel="2">
+                            <dl class="head"><dt>PRODUCT NAME</dt><dd>
+                            <div class="prod"></div>
+                            <a href="#" class="btn-drop hidestuff"></a><ul
+                            class="dropdown hidestuff"></ul></dd></dl><dl
+                            class="mid cost"><dt>Cost</dt><dd><span
+                            class="small"></span>R119 <span
+                            class="small">PM&nbsp;(Incl.&nbsp;VAT)</span></dd></dl><dl
+                            class="mid normal"><dt>FREE domain for first year<sup> 1</sup></dt><dd>.co.za|.site|.online|.store|.tech</dd></dl><dl
+                            class="mid alt"><dt>Setup Fee</dt><dd>FREE</dd></dl><dl
+                            class="mid normal"><dt>Web Traffic<sup> 2</sup></dt><dd>Unlimited</dd></dl><dl
+                            class="mid alt"><dt>Storage Space</dt><dd>2 000 <span>MB</span></dd></dl><dl
+                            class="mid normal"><dt>Email Accounts</dt><dd>75</dd></dl><dl
+                            class="mid alt"><dt>Databases</dt><dd
+                            class="check"></dd></dl><dl
+                            class="mid normal"><dt>Host ASP and PHP</dt><dd
+                            class="check"></dd></dl>
+                            <!-- <dl class="mid cost"><dt>
+                                <div id="product-grid">
+                                    <div id="product-item-container"></div>
+                                </div>
+                            </dt></dl> -->
+                        </li>
+                    </div>
+                </div>
+
+                <!-- <div class="card swiper-slide">
+                    <div class="card-content">
+                                                           
+                        </p>
+                        <h2 class="name">Quantity</h2>
+                        
+                        <p class="description">
+                    </div>
+                    
+                </div>  -->
+               
+            </div>
+            
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div> <br><br>
+
+                            <label>Quantity</label>
+                            <div id="product-grid">
+                                <div id="product-item-container"></div>
+                            </div><br>
+        <div class="container">
+            <!--  Shopping cart table wrapper  -->
+            <div id="shopping-cart">
+                <a  class="button" onClick="emptyCart()" id="btnEmpty">Clear</a>
+                <table class="tbl-cart" cellpadding="10" cellspacing="1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class='text-right' width="10%">Unit Price</th>
+                            <th class='text-right' width="5%">Quantity</th>
+                            <th class='text-right' width="10%">Sub Total</th>
+                        </tr>
+                    </thead>
+                    <!--  Cart table to load data on "add to cart" action -->
+                    <tbody id="cartTableBody">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="text-right">Total:</td>
+                            <td id="itemCount" class="text-right" colspan="2"></td>
+                            <td id="totalAmount" class="text-right"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+    </body>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+   
+</html>
